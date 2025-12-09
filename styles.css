@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f8f3f3;
+  color: #2b2b2b;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: maroon;
+  padding: 15px;
+  z-index: 1000;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  justify-content: right;
+}
+
+#navbar a:hover {
+  color: #ffdddd;
+}
+
+#welcome-section {
+  height: 90vh; 
+  background: linear-gradient(rgba(128, 0, 0, 0.1), rgba(128, 0, 0, 0.8)),
+    url('pia.jpg') center/cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#welcome-section p {
+  font-size: 1.2rem;
+}
+
+#about {
+  padding: 60px;
+  text-align: center;
+  color: #6b0000;
+}
+
+#about p {
+  color: #000;
+  padding: 20px;
+  margin: 10px;
+
+}
+
+#projects {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+#projects h2 {
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+  color: maroon;
+}
+
+.project-tile {
+  background: white;
+  border: 2px solid maroon;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 350px;
+  margin: 20px auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.project-tile a {
+  color: maroon;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.project-tile a:hover {
+  text-decoration: underline;
+}
+
+#contact {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#contact h2 {
+  color: maroon;
+}
+
+#profile-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 25px;
+  background: maroon;
+  color: white;
+  text-decoration: none;
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+#profile-link:hover {
+  background: #6b0000;
+}
+
+@media (max-width: 700px) {
+  #navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #welcome-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-tile {
+    max-width: 90%;
+  }
+}
